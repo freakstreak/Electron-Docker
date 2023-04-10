@@ -1,0 +1,146 @@
+{
+  "projects": [
+    {
+      "_id": "206ac34c-3bbb-4902-ac68-5b4c73c6a32d",
+      "name": "Project 1",
+      "containers": [
+        {
+          "_id": "abebe4d23db3",
+          "name": "Auth",
+          "image": "p1Image1",
+          "status": "Running",
+          "ports": "39324",
+          "started": "29 Jul 22"
+        },
+        {
+          "_id": "676039dbdf4a",
+          "name": "Email",
+          "image": "p1Image2",
+          "status": "Stopped ",
+          "ports": "53202",
+          "started": "14 Jun 22"
+        },
+        {
+          "_id": "676fds039dbdf4a",
+          "name": "Engine",
+          "image": "p1Image3",
+          "status": "Stopped ",
+          "ports": "12017",
+          "started": "31 Jul 22"
+        }
+      ]
+    },
+    {
+      "_id": "1db35091-67a0-4a20-a7fa-ec1eaaf43ed3",
+      "name": "Project 2",
+      "containers": [
+        {
+          "_id": "abebe4d23db4",
+          "name": "Engine",
+          "image": "p2Image1",
+          "status": "Running",
+          "ports": "39324",
+          "started": "29 Jul 22"
+        },
+        {
+          "_id": "676039dbdf4b",
+          "name": "Nodemailer",
+          "image": "p2Image2",
+          "status": "Stopped ",
+          "ports": "53202",
+          "started": "14 Jun 22"
+        },
+        {
+          "_id": "703d91deb326",
+          "name": "Node",
+          "image": "p2Image3",
+          "status": "Stopped ",
+          "ports": "12017",
+          "started": "31 Jul 22"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "_id": "9349f0b37768",
+      "name": "p1Image1",
+      "tag": "old",
+      "status": "used",
+      "created": "20 Jan 23",
+      "size": 92,
+      "volume_id": "6de43158-391b-4b06-af93-3ed279ea1eb7"
+    },
+    {
+      "_id": "d412aa1c4230",
+      "name": "p1Image2",
+      "tag": "latest",
+      "status": "in use",
+      "created": "23 Jul 22",
+      "size": 64,
+      "volume_id": "c3716935-1949-4f49-978a-c53ffd9994f7"
+    },
+    {
+      "_id": "d412aa1c4231",
+      "name": "p1Image3",
+      "tag": "latest",
+      "status": "in use",
+      "created": "23 Jul 22",
+      "size": 64,
+      "volume_id": "abfd8210-6fdc-48d9-9966-0ce0d5ec9414"
+    },
+    {
+      "_id": "9349f0b37769",
+      "name": "p2Image1",
+      "tag": "old",
+      "status": "used",
+      "created": "20 Jan 23",
+      "size": 92,
+      "volume_id": "2d813b89-ec50-4e11-8688-dcb0d61f8148"
+    },
+    {
+      "_id": "d412aa1c4232",
+      "name": "p2Image2",
+      "tag": "latest",
+      "status": "in use",
+      "created": "23 Jul 22",
+      "size": 64,
+      "volume_id": "a23e60eb-f442-42de-a876-aca03c21d3a5"
+    },
+    {
+      "_id": "d412aa1c4233",
+      "name": "p2Image3",
+      "tag": "latest",
+      "status": "in use",
+      "created": "23 Jul 22",
+      "size": 64,
+      "volume_id": "0f459804-f050-4424-91b1-7c72b279b35b"
+    }
+  ],
+  "volumes": [
+    {
+      "_id": "6de43158-391b-4b06-af93-3ed279ea1eb7",
+      "size": 70
+    },
+    {
+      "_id": "c3716935-1949-4f49-978a-c53ffd9994f7",
+      "size": 88
+    },
+    {
+      "_id": "abfd8210-6fdc-48d9-9966-0ce0d5ec9414",
+      "size": 79
+    },
+    {
+      "_id": "2d813b89-ec50-4e11-8688-dcb0d61f8148",
+      "size": 92
+    },
+    {
+      "_id": "a23e60eb-f442-42de-a876-aca03c21d3a5",
+      "size": 36
+    },
+    {
+      "_id": "0f459804-f050-4424-91b1-7c72b279b35b",
+      "size": 33
+    }
+  ]
+}

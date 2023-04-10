@@ -1,0 +1,29 @@
+.dataGridTable {
+    width: 100%;
+    transform: rotateX(180deg);
+    overflow: auto;
+    border-radius:12px;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb 
+  }
+  .table{
+    tr{
+      :last-child{
+        border-right-width: 0px;
+        
+      }
+      td{
+        &th{
+        :last-child{
+          margin-left: auto;
+        }
+      }
+    }
+    }
+  }
+.Container{
+  transform: rotateX(180deg);
+  overflow: auto;
+}
+ 
