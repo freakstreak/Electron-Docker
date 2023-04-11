@@ -1,5 +1,6 @@
 {
   "description": "Electron Docker App",
+  "version": "1.0.0",
   "keywords": [
     "electron",
     "react",
@@ -24,7 +25,7 @@
   ],
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/gluestack-seal/electron-app"
+    "url" : "https://github.com/freakstreak/electron-app"
   },
   "main": "./src/main/main.ts",
   "scripts": {
@@ -157,7 +158,7 @@
   },
   "build": {
     "productName": "ElectronDocker",
-    "appId": "org.erb.ElectronDocker",
+    "appId": "org.github.electron-app",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -215,7 +216,7 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "gluestack-seal",
+      "owner": "freakstreak",
       "repo": "electron-app"
     }
   },
