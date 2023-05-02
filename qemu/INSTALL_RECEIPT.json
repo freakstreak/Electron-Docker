@@ -1,0 +1,195 @@
+{
+  "homebrew_version": "4.0.13-28-g4fe3436",
+  "used_options": [
+
+  ],
+  "unused_options": [
+
+  ],
+  "built_as_bottle": true,
+  "poured_from_bottle": true,
+  "loaded_from_api": true,
+  "installed_as_dependency": false,
+  "installed_on_request": true,
+  "changed_files": [
+    "share/qemu/firmware/50-edk2-i386-secure.json",
+    "share/qemu/firmware/50-edk2-x86_64-secure.json",
+    "share/qemu/firmware/60-edk2-aarch64.json",
+    "share/qemu/firmware/60-edk2-arm.json",
+    "share/qemu/firmware/60-edk2-i386.json",
+    "share/qemu/firmware/60-edk2-x86_64.json"
+  ],
+  "time": 1681803601,
+  "source_modified_time": 1680725502,
+  "compiler": "clang",
+  "aliases": [
+
+  ],
+  "runtime_dependencies": [
+    {
+      "full_name": "capstone",
+      "version": "4.0.2",
+      "declared_directly": true
+    },
+    {
+      "full_name": "pcre2",
+      "version": "10.42",
+      "declared_directly": false
+    },
+    {
+      "full_name": "gettext",
+      "version": "0.21.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "glib",
+      "version": "2.76.1",
+      "declared_directly": true
+    },
+    {
+      "full_name": "ca-certificates",
+      "version": "2023-01-10",
+      "declared_directly": false
+    },
+    {
+      "full_name": "gmp",
+      "version": "6.2.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libunistring",
+      "version": "1.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libidn2",
+      "version": "2.3.4",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libtasn1",
+      "version": "4.19.0",
+      "declared_directly": false
+    },
+    {
+      "full_name": "nettle",
+      "version": "3.8.1",
+      "declared_directly": true
+    },
+    {
+      "full_name": "p11-kit",
+      "version": "0.24.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "openssl@1.1",
+      "version": "1.1.1t",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libevent",
+      "version": "2.1.12",
+      "declared_directly": false
+    },
+    {
+      "full_name": "libnghttp2",
+      "version": "1.52.0",
+      "declared_directly": false
+    },
+    {
+      "full_name": "unbound",
+      "version": "1.17.1",
+      "declared_directly": false
+    },
+    {
+      "full_name": "gnutls",
+      "version": "3.8.0",
+      "declared_directly": true
+    },
+    {
+      "full_name": "jpeg-turbo",
+      "version": "2.1.5.1",
+      "declared_directly": true
+    },
+    {
+      "full_name": "libpng",
+      "version": "1.6.39",
+      "declared_directly": true
+    },
+    {
+      "full_name": "libslirp",
+      "version": "4.7.0",
+      "declared_directly": true
+    },
+    {
+      "full_name": "libssh",
+      "version": "0.10.4",
+      "declared_directly": true
+    },
+    {
+      "full_name": "libusb",
+      "version": "1.0.26",
+      "declared_directly": true
+    },
+    {
+      "full_name": "lzo",
+      "version": "2.10",
+      "declared_directly": true
+    },
+    {
+      "full_name": "ncurses",
+      "version": "6.4",
+      "declared_directly": true
+    },
+    {
+      "full_name": "pixman",
+      "version": "0.42.2",
+      "declared_directly": true
+    },
+    {
+      "full_name": "snappy",
+      "version": "1.1.10",
+      "declared_directly": true
+    },
+    {
+      "full_name": "vde",
+      "version": "2.3.3",
+      "declared_directly": true
+    },
+    {
+      "full_name": "lz4",
+      "version": "1.9.4",
+      "declared_directly": false
+    },
+    {
+      "full_name": "xz",
+      "version": "5.4.2",
+      "declared_directly": false
+    },
+    {
+      "full_name": "zstd",
+      "version": "1.5.5",
+      "declared_directly": true
+    }
+  ],
+  "source": {
+    "spec": "stable",
+    "versions": {
+      "stable": "7.2.1",
+      "head": null,
+      "version_scheme": 0
+    },
+    "path": "/opt/homebrew/Library/Taps/homebrew/homebrew-core/Formula/qemu.rb",
+    "tap_git_head": "d149516d3de2819035470f05b15ba0db8400bf00",
+    "tap": "homebrew/core"
+  },
+  "arch": "arm64",
+  "built_on": {
+    "os": "Macintosh",
+    "os_version": "macOS 12.6",
+    "cpu_family": "dunno",
+    "xcode": "14.2",
+    "clt": "14.2.0.0.1.1668646533",
+    "preferred_perl": "5.30"
+  }
+}

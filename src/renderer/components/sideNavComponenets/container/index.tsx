@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, Checkbox, Flex, Input, Td, Text } from "@chakra-ui/react";
+import { Box, Button, Checkbox, Flex, Input, Td, Text } from "@chakra-ui/react";
 import { Table, Thead, Tbody, Tr, Th, TableContainer } from "@chakra-ui/react";
 import { DangerButtton } from "../../../components/buttons";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -17,6 +17,7 @@ const MainContainer = () => {
   const [projects, setProjects] = useState<any[]>([]);
   const [parentCheckBox, setParentCheckbox] = useState(false);
   const [showDelete, setShowDelete] = useState(false);
+  const [qemuArg, setQemuArg] = useState("");
 
   useEffect(() => {
     const fetchedProjects = data.projects.map((project: any) => {
@@ -53,6 +54,21 @@ const MainContainer = () => {
     }
   }, [projects]);
 
+  const getQemuLogs = () => {
+    window.electron.ipcRenderer.once("qemu-trigger", (arg: any) => {
+      setQemuArg(arg);
+    });
+    window.electron.ipcRenderer.sendMessage("qemu-trigger", ["ping"]);
+  };
+
+  const getQemuLogsProduction = () => {
+    window.electron.ipcRenderer.on("qemu-logs", (arg: any) => {
+      console.log(arg);
+      window.alert(arg);
+    });
+    window.electron.ipcRenderer.sendMessage("qemu-logs", ["ping"]);
+  };
+
   return (
     <Box>
       <Text fontSize={20}>Containers</Text>
@@ -60,6 +76,23 @@ const MainContainer = () => {
         A container packages up code and its dependencies so the application
         runs quickly and reliably from one computing environment to another.
       </Text>
+      {qemuArg && <Text>{qemuArg}</Text>}
+
+      <Button
+        onClick={() => {
+          getQemuLogs();
+        }}
+      >
+        Click Me
+      </Button>
+
+      <Button
+        onClick={() => {
+          getQemuLogsProduction();
+        }}
+      >
+        Production
+      </Button>
 
       <Flex my={8} justifyContent="space-between">
         <Box visibility={showDelete ? "visible" : "hidden"}>
