@@ -29,3 +29,6 @@ npm-debug.log.*
 *.scss.d.ts
 
 ubuntu
+ubuntu.qcow2
+
+.env

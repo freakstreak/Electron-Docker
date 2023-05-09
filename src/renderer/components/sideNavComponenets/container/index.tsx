@@ -54,10 +54,10 @@ const MainContainer = () => {
     }
   }, [projects]);
 
+  window.electron.ipcRenderer.on("qemu-trigger", (arg: any) => {
+    setQemuArg(arg);
+  });
   const getQemuLogs = () => {
-    window.electron.ipcRenderer.once("qemu-trigger", (arg: any) => {
-      setQemuArg(arg);
-    });
     window.electron.ipcRenderer.sendMessage("qemu-trigger", ["ping"]);
   };
 
